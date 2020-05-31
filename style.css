@@ -1,113 +1,82 @@
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    max-height: 100%;
-    margin: 0;
-   
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
 }
 header {
-    display: flex;
-    font-size: 13px;
-    line-height: 24px;
-    color: rgba(0, 0, 0, .87);
-    position: relative;
-    text-align: right;
-    min-width: 165px;
-    
-    z-index: 986;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 10px;
-    
-    
+  display: flex;
+  font-size: 13px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+  text-align: right;
+  min-width: 165px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 15px;
 }
 .headerContent {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
 }
 .headerLeft {
-    display: flex;
-    padding-right: 15px;
-    text-align: right;
+  display: flex;
+  padding-right: 15px;
+  text-align: right;
 }
 .headerRight {
-    display: flex;
-    text-align: left;
+  display: flex;
+  text-align: left;
 }
-
-.profile {
-    display: inline-block;
-    outline: none;
-    vertical-align: middle;
-    border-radius: 2px;
-    box-sizing: border-box;
-    height: 30px;
-    width: 30px;
-    padding: 0 0 0 15px;  
-
+.gmail {
+    cursor: pointer;
 }
-.profpic{
-    background-size: 32px 32px;
-    border-radius: 50%;
-    display: block;
-    margin: -1px;
-    position: relative;
-    height: 32px;
-    width: 32px;
-    z-index: 0;
-    background: url(https://lh3.googleusercontent.com/ogw/ADGmqu8PLg8qU1pO0Acg36h6DSsLqOR9Oeo8MrOCB7cq=s64-c-mo);
-    background-size: 100%;
-    
-}
-
-
-
-.menu {
-    background-image: url(http://ssl.gstatic.com/gb/images/i2_2ec824b0.png);
-    background-position: -132px -38px;
-    background-size: 528px 68px;
-    opacity: .55;
-    height: 30px;
-    width: 30px;
-
-}
-.searchBar{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    
-    
-} 
-.a {
-    border: none;
-    color: transparent;
-    padding: 0 0 0 0;
-    line-height: 24px;
-    margin-left: 20px;
-    width: 260px;
-
-
-}
-.input-box {
-    width: 275px;
-    border: solid 1px;
-    border-color: rgba(0, 0, 0, .4);
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 0 gray;
-    content: "";
-    padding: 5px 8px 0 16px;
-   
-
+.gmail:hover{
+    text-decoration: underline;
 }
 .images {
-   
     padding-left: 15px;
+    cursor: pointer;
+}
+.images:hover {
+    text-decoration: underline;
+}
+.profile {
+  outline: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 0 0 0 15px;
+}
+.profpic {
+  background-size: 32px 32px;
+  border-radius: 50%;
+  margin: -1px;
+  position: relative;
+  height: 32px;
+  width: 32px;
+  background: url(https://lh3.googleusercontent.com/ogw/ADGmqu8PLg8qU1pO0Acg36h6DSsLqOR9Oeo8MrOCB7cq=s64-c-mo);
+  background-size: 100%;
+  cursor: pointer;
+}
+.menu {
+  background-image: url(http://ssl.gstatic.com/gb/images/i2_2ec824b0.png);
+  background-position: -132px -38px;
+  background-size: 528px 68px;
+  opacity: 0.55;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.menu:hover{
+    opacity: 0.8;
 }
 
 main {
@@ -115,114 +84,228 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 10px 10px 10px 10px;
-    padding-bottom: 160px;
-    
-}
-
+    padding-bottom: 145px;
+  }
 .logo {
     background-image: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png);
     padding: 10px 0 10px 0;
     background-size: 272px 92px;
     height: 70px;
     width: 272px;
-
-
-    
+  }
+.searchBar {
+    padding-bottom: 7px;
+    padding-top: 25px;
 }
-.buttons {
+.input-box {
+    background: #fff;
     display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width: 482px;
+}
+.input-box:hover {
+    box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color:rgba(223,225,229,0)
+}
+.searchContent {
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+}
+.leftSide {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+}
+.magnifyingGlass {
+    background-image: url(http://ssl.gstatic.com/gb/images/i2_2ec824b0.png);
+    background-position: -250px -34px;
+    background-size: 528px 68px;
+    opacity: 0.32;
+    height: 20px;
+    width: 20px;
+
+}
+.a {
+  border: none;
+  line-height: 24px;
+  margin-left: 20px;
+  width: 260px;
+  outline: none;
+  background-color:transparent;
+  margin:0;
+  padding:0;
+  color:rgba(0,0,0,.87);
+  word-wrap:break-word;
+  display:flex;
+  flex:100%;
+  height:34px;
+  font-size:16px;
+  cursor: text;
+}
+.rightSide {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: -5px;
+    align-items: stretch;
     flex-direction: row;
-    padding: 10px 10px 10px 10px 
-    
-   
+}
+.microphone {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 8px;
+    width: 24px;
+    line-height: 44px;
+}
+.micro {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+.center {
+    padding-top: 18px;
+    width: 487px;
+    height: 70px;
+}
+
+.buttons {
+    text-align: center;
 }
 #googleSearch {
-    border: lightgray solid 2px;
-    box-shadow: 2px 2px 0 0 lightgray;
-    content: "";
-    color: gray ;
-    background-color: lightgray;
-    margin-right: 10px;
-
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+#googleSearch:hover {
+    border-color: #cfcfcf;
+    color:rgba(0, 0, 0, 0.87);
+}
+#feelingLucky {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+#feelingLucky:hover {
+    border-color: #cfcfcf;
+    color:rgba(0, 0, 0, 0.87);
 }
 
 
- 
- img {
-    display: flex;
-     height: 15vh;
-     width: auto;
- }
 
- footer{
-   
-     justify-content: flex-end;
-     display: flex;
-     flex-direction: column;
-     align-content: bottom;
-     background: #f2f2f2;
-     border-top: 1px solid #e4e4e4;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: rgb(228, 228, 228);
-    
-     
- }
- .region {
-     padding-left: 27px;
-     font-size: 15px;
-     color: rgba(0, 0, 0, .54);
-     height: 30px;
-     padding-top: 10px;
-     
- }
-
- .footerContent{
-     font-size: 14px;
-     color: rgba(0, 0, 0, .54);
-     display: flex;
-     flex-direction: row;
-     border-top: 1px solid #e4e4e4;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: rgb(228, 228, 228);
-    justify-content: space-between;
-     
-     
-     height: 30px;
-     padding-top: 10px;
-     
- }
- .left {
-     display: flex;
- }
- .right {
-     display: flex;
- }
- .privacy {
-     padding-left: 27px;
- }
- .terms {
-    padding-left: 27px;
- }
- .settings{
-    padding-left: 27px;
-    padding-right: 27px;
- }
- .ads{
-     padding-left: 27px;
- }
- .Business{
-     padding-left: 27px;
- }
- .About {
-     padding-left: 27px;
- }
- .howWorks {
-     padding-left: 27px;
- }
- body.footer {
-     display: flex;
-     justify-content: flex-end;
-     
- }
+footer {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-content: bottom;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(228, 228, 228);
+}
+.region {
+  padding-left: 27px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+  height: 30px;
+  padding-top: 10px;
+}
+.footerContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #e4e4e4;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(228, 228, 228);
+  justify-content: space-between;
+  height: 30px;
+  padding-top: 10px;
+}
+.left {
+  display: flex;
+}
+.right {
+  display: flex;
+}
+.privacy {
+  padding-left: 27px;
+  cursor: pointer;
+}
+.privacy:hover{
+    text-decoration: underline;
+}
+.terms {
+  padding-left: 27px;
+  cursor: pointer;
+}
+.terms:hover{
+    text-decoration: underline;
+}
+.settings {
+  padding-left: 27px;
+  padding-right: 27px;
+  cursor: pointer;
+}
+.settings:hover{
+    text-decoration: underline;
+}
+.ads {
+  padding-left: 27px;
+  cursor: pointer;
+}
+.ads:hover{
+    text-decoration: underline;
+}
+.Business {
+  padding-left: 27px;
+  cursor: pointer;
+}
+.Business:hover {
+    text-decoration: underline;
+}
+.About {
+  padding-left: 27px;
+  cursor: pointer;
+}
+.About:hover{
+    text-decoration: underline;
+}
+.howWorks {
+  padding-left: 27px;
+  cursor: pointer;
+}
+.howWorks:hover{
+    text-decoration: underline;
+}
